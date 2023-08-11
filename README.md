@@ -1,16 +1,16 @@
-                                                          Participantes
+Participantes
                                                           
-                                                          ARTHUR JUNG BARRETO – 202105833
+ARTHUR JUNG BARRETO – 202105833
                                                           
-                                                          Paulo Victor Brandão – 202105862
+Paulo Victor Brandão – 202105862
                                                           
-                                                          GABRIEL HENRIQUE BARCELOS – 202005476
+GABRIEL HENRIQUE BARCELOS – 202005476
                                                           
-                                                          JULIERME AUGUSTO ALVES – 202005491
+JULIERME AUGUSTO ALVES – 202005491
                                                           
-                                                          Josiel Pantaleão Cardoso Silva – 202010404
+Josiel Pantaleão Cardoso Silva – 202010404
                                                           
-                                                          Email: <josielpantaleao123@gmail.com>
+Email: <josielpantaleao123@gmail.com> <paulobrandao@discente.ufg.br>
 
 
 Resumo
