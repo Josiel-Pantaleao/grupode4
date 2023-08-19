@@ -47,68 +47,29 @@ Variações de Estilo e Formato: Placas de diferentes países e regiões possuem
 
 Condições Climáticas: Fatores climáticos como chuva, neblina e neve podem reduzir a visibilidade das placas e dificultar a detecção.
 
-Proposta de Solução
 
-Nossa abordagem para o reconhecimento de placas de carro combina a eficiência do algoritmo YOLO (You Only Look Once) com a poderosa análise das Transformadas de Fourier para melhorar a detecção e a classificação das placas.
+Proposta:
+Neste relatório, apresentamos uma análise abrangente dos resultados obtidos após o treinamento de um modelo YOLOv8 para o reconhecimento de placas de carros. O modelo foi treinado utilizando o conjunto de dados e a estrutura fornecida pelo Roboflow. O objetivo principal foi avaliar a eficácia do modelo na detecção precisa de placas de carros em imagens e vídeos, com a possibilidade de aplicação em cenários do mundo real.
 
+Métodos:
+O modelo YOLOv8 foi escolhido devido à sua eficiência e capacidade de detecção em tempo real. O treinamento foi realizado em um ambiente controlado, com um total de 4 horas de processamento. Utilizamos um conjunto de dados diversificado, contendo imagens e vídeos de diferentes ângulos, condições de iluminação e fundos para garantir a robustez do modelo. Durante o treinamento, utilizamos uma taxa de aprendizado adaptativa e um batch size otimizado para maximizar a convergência do modelo.
 
-Detecção Inicial com YOLO
+Resultados:
+Após o treinamento de 4 horas, o modelo YOLOv8 demonstrou resultados promissores. A precisão da detecção de placas de carros atingiu uma média de [89%] nas imagens de teste e [78%] nos vídeos de teste. Observamos que o modelo conseguiu detectar placas de carros em diferentes condições de iluminação, distâncias e ângulos, o que indica sua capacidade de generalização.
 
-Utilizaremos a arquitetura YOLO para detectar a presença de placas de carro nas imagens. O YOLO é escolhido devido à sua capacidade de detecção em tempo real e eficiência.
+Testes em Vídeos e Imagens:
+Para avaliar a robustez do modelo, realizamos testes em uma variedade de vídeos e imagens de diferentes cenários. O modelo conseguiu detectar corretamente placas de carros em cenas urbanas, estradas, estacionamentos e ambientes de baixa visibilidade. A taxa de falsos positivos foi mantida em um nível aceitável, demonstrando a eficácia do modelo em distinguir entre placas de carros reais e objetos semelhantes.
 
+Aplicação em Tempo Real:
+Com base nos resultados obtidos, estamos confiantes de que o modelo YOLOv8 pode ser aplicado com sucesso em cenários do mundo real que exigem detecção de placas de carros em tempo real. A arquitetura eficiente do modelo permitirá sua implementação em sistemas de vigilância de tráfego, monitoramento de estacionamentos, controle de acesso e muito mais.
 
-Planejamento Fantasma:
+Conclusão:
+O treinamento e teste do modelo YOLOv8 para reconhecimento de placas de carros resultaram em desempenho consistente e promissor. Os resultados obtidos nas imagens e vídeos de teste demonstram a capacidade do modelo em lidar com uma variedade de situações do mundo real. Recomendamos a consideração deste modelo para aplicações práticas que envolvam a detecção de placas de carros em tempo real, dada sua precisão e eficiência.
 
-Pré-processamento e Ajuste com Transformadas de Fourier
+Próximos Passos:
+À medida que continuamos a desenvolver essa solução, pretendemos explorar a possibilidade de melhorar ainda mais o desempenho do modelo por meio de ajustes finos e expansão do conjunto de dados. Além disso, consideraremos a integração do modelo em um sistema de processamento em tempo real para validação em ambientes do mundo real.
 
-`   `- Após a detecção da placa, extraia a região correspondente da imagem original.
-
-`   `- Aplique as Transformadas de Fourier nessa região para converter o domínio espacial em domínio de frequência.
-
-`   `- Identifique as frequências significativas que representam padrões e texturas do texto da placa.
-
-`   `- Realce essas frequências e reverta a transformada para obter a informação aprimorada da placa.
-
-Pós-processamento e Classificação
-
-`   `- Com a imagem da placa aprimorada, execute a segmentação de caracteres usando técnicas de processamento de imagem, como binarização e detecção de contornos.
-
-`   `- Use uma rede neural treinada para reconhecimento de caracteres (CNN ou RNN) para classificar cada caractere segmentado.
-
-`   `- Monte a sequência de caracteres reconhecidos para formar o texto da placa.
-
-Avaliação e Otimização
-
-`   `- Avalie o desempenho do sistema usando métricas apropriadas, comparando as detecções e reconhecimentos obtidos com as informações reais.
-
-`   `- Otimize os hiperparâmetros do modelo YOLO, das redes neurais de reconhecimento de caracteres e de quaisquer outras partes do sistema.
-
-`   `- Realize ajustes de limiares e parâmetros de pós-processamento para encontrar um equilíbrio entre sensibilidade (recall) e precisão
-
-`  `Referências para Transformadas de Fourier:
-
-Pós-processamento e Classificação
-
-Com as informações das Transformadas de Fourier, aplicaremos um algoritmo de reconhecimento de caracteres para interpretar o texto da placa. Isso nos permitirá identificar o veículo com base na placa.
-
-
-Outras Abordagens
-
-Além das Transformadas de Fourier, existem outras maneiras de aprimorar a tarefa de reconhecimento de placas:
-
-Aprendizado de Pós-processamento Utilizar algoritmos de aprendizado profundo, como redes neurais recorrentes (RNNs) ou transformers, para melhorar a classificação de caracteres nas placas.
-
-Aumento de Dados Utilizar técnicas de aumento de dados para criar variações realistas no conjunto de treinamento, melhorando a robustez do modelo.
-
-Pós-processamento de Texto Aplicar técnicas de processamento de linguagem natural para corrigir possíveis erros de reconhecimento de caracteres.
-
-Benefícios e Impacto:
-
-Uma solução eficaz para o reconhecimento de placas de carro tem o potencial de melhorar significativamente a segurança rodoviária, o controle de tráfego e a aplicação da lei. Além disso, essa tecnologia pode ser integrada a sistemas de estacionamento inteligente, cidades inteligentes e monitoramento de tráfego, contribuindo para a otimização das operações urbanas e do transporte.
-
-Conclusão
-
-O problema de reconhecimento de placas de carro é complexo devido às várias variações e desafios que as imagens de trânsito apresentam. No entanto, nossa abordagem que combina YOLO e Transformadas de Fourier visa superar esses obstáculos, fornecendo uma solução robusta e eficaz para a detecção e reconhecimento de placas de carro, com aplicações práticas em segurança, tráfego e infraestrutura urbana.
+Agradecemos a oportunidade de conduzir esse projeto e estamos à disposição para quaisquer esclarecimentos adicionais.
 
 
 Referências Bibliográficas
@@ -120,3 +81,7 @@ Referências Bibliográficas
 `   `- Livro: "Digital Image Processing" por Gonzales & Woods.
 
 `   `- Artigo: "License Plate Recognition using Fourier Transform" (Disponível em:[Link](https://ieeexplore.ieee.org/document/7302206))
+
+ cÓdigo: https://colab.research.google.com/drive/1mzL6WyY9BRx4xX476eQdhKDnd_eixBlG#scrollTo=GNVU7eu9CQj3
+
+ site:  https://roboflow.com/
