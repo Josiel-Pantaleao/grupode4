@@ -63,6 +63,8 @@ Para avaliar a robustez do modelo, realizamos testes em uma variedade de vídeos
 Aplicação em Tempo Real:
 Com base nos resultados obtidos, estamos confiantes de que o modelo YOLOv8 pode ser aplicado com sucesso em cenários do mundo real que exigem detecção de placas de carros em tempo real. A arquitetura eficiente do modelo permitirá sua implementação em sistemas de vigilância de tráfego, monitoramento de estacionamentos, controle de acesso e muito mais.
 
+Problemas: Decidimos inicialmente considerar o uso da Transformada de Fourier para identificar placas de carros em imagens. No entanto, após análises mais detalhadas, descobrimos que essa abordagem não seria eficaz devido às complexas características espaciais das placas, como formas e padrões de letras/números, além das variações de tamanho, orientação e iluminação. Devido a essas limitações, optamos por não seguir com a Transformada de Fourier e, em vez disso, escolhemos abordagens avançadas de processamento de imagem e aprendizado de máquina, como redes neurais convolucionais, que podem capturar diretamente as características das placas e oferecer uma identificação mais precisa e confiável, adaptada a diversos cenários e condições.
+
 Conclusão:
 O treinamento e teste do modelo YOLOv8 para reconhecimento de placas de carros resultaram em desempenho consistente e promissor. Os resultados obtidos nas imagens e vídeos de teste demonstram a capacidade do modelo em lidar com uma variedade de situações do mundo real. Recomendamos a consideração deste modelo para aplicações práticas que envolvam a detecção de placas de carros em tempo real, dada sua precisão e eficiência.
 
