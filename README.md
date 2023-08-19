@@ -1,16 +1,38 @@
-Participantes
-                                                          
-ARTHUR JUNG BARRETO – 202105833
-                                                          
-Paulo Victor Brandão – 202105862
-                                                          
-GABRIEL HENRIQUE BARCELOS – 202005476
-                                                          
-JULIERME AUGUSTO ALVES – 202005491
-                                                          
-Josiel Pantaleão Cardoso Silva – 202010404
-                                                          
-Email: <josielpantaleao123@gmail.com> <paulobrandao@discente.ufg.br>
+# Detecção de Placas de Veículos Utilizando YOLOv8
+
+
+**Arthur Jung Barreto**
+
+Universidade Federal de Goiás
+jung@discente.ufg.br
+
+
+**Gabriel Henrique Barcelos**
+
+Universidade Federal de Goiás
+
+gabriel.barcelos@discente.ufg.br
+
+
+**Josiel Pantaleao Cardoso Silva**
+
+Universidade Federal de Goiás
+
+josielpantaleao@discente.ufg.br
+
+
+**Julierme Augusto Alves**
+
+Universidade Federal de Goiás
+
+julierme.alves@discente.ufg.br
+
+
+**Paulo Victor Brandao Faria Borges**
+
+Universidade Federal de Goiás
+
+paulobrandao@discente.ufg.br
 
 
 Resumo
